@@ -1,6 +1,6 @@
-package main.java.piece;
+package piece;
 
-import main.java.main.GamePanel;
+import main.GamePanel;
 
 public class Pawn extends Piece {
 
@@ -8,10 +8,10 @@ public class Pawn extends Piece {
         super(color, col, row);
         
         if(color == GamePanel.WHITE){
-            image = getImage("../../resources/white_piece");
+            image = getImage("/white_piece");
         }
         else{
-            image = getImage("../../resources/black_piece");
+            image = getImage("/black_piece");
         }
     }
 

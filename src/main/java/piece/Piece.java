@@ -1,12 +1,12 @@
-package main.java.piece;
+package piece;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import main.java.main.Board;
-import main.java.main.GamePanel;
+import main.Board;
+import main.GamePanel;
 
 import java.awt.Graphics2D;
 

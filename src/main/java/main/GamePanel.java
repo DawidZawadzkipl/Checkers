@@ -1,7 +1,7 @@
-package main.java.main;
+package main;
 import javax.swing.JPanel;
 
-import main.java.piece.*;
+import piece.*;
 
 import java.awt.AlphaComposite;
 import java.awt.Color;

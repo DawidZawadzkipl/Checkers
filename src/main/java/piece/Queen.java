@@ -1,16 +1,16 @@
-package main.java.piece;
+package piece;
 
-import main.java.main.GamePanel;
+import main.GamePanel;
 
 public class Queen extends Piece {
 
     public Queen(int color, int col, int row){
         super(color, col, row);
         if(color == GamePanel.WHITE){
-            image = getImage("../../resources/white_queen");
+            image = getImage("/white_queen");
         }
         else{
-            image = getImage("../../resources/black_queen");
+            image = getImage("/black_queen");
         }
     }
 
