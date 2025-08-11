@@ -1,7 +1,12 @@
 # 🏁 Checkers Game - Java Implementation
 ## 📝 Project Description
 A classic checkers game implemented in Java using Swing library. This project features complete game logic with an intuitive graphical interface, time tracking for each player, and all standard checkers rules.
+
+<img width="1098" height="824" alt="image" src="https://github.com/user-attachments/assets/0e3f5134-4746-4a0c-ad1c-12f8f44c3c4a" />
+<img width="1097" height="823" alt="2queens" src="https://github.com/user-attachments/assets/f2fdb46a-ed41-4adf-916a-fe691022a0b7" />
+
 ## ✨ Features
+
 Core Game Mechanics:
 - 🔄 Two-player game (white vs black)
 - 🎯 Complete checkers logic - pawn moves, mandatory captures. chain captures
@@ -46,7 +51,7 @@ mvn clean compile
 ```
 Run the application
 ```
-java -cp target/classes main.Main
+mvn exec:java
 ```
 ## 🧪 Testing
 The project includes unit tests for game logic:
