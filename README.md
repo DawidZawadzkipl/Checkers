@@ -24,12 +24,14 @@ UI:
 - Java 8+ - main programming language
 - Java Swing - graphical user interface
 - Java AWT - 2D graphics and event handling
+- JUnit5 - unit testing framework
+- AssertJ - fluent assertion library
 
 ## 🚀 Installation and Setup
 Requirements:
 
 - Java 8 or higher
-- IDE environment (IntelliJ IDEA, Eclipse) or javac compiler
+- Maven 3.6+
 
 Steps:
 
@@ -38,20 +40,24 @@ Clone the repository:
 git clone https://github.com/DawidZawadzkipl/Checkers
 cd checkers-java
 ```
-Compile the project:
+Build the project using Maven:
 ```
-javac -d bin src/main/*.java src/piece/*.java
+mvn clean compile
 ```
+Run the application
+```
+java -cp target/classes main.Main
+```
+## 🧪 Testing
+The project includes unit tests for game logic:
+```
+# Run all tests with detailed output
+mvn test
 
-Run the game:
-```
-java -cp bin main.Main
-```
+# Run tests and generate reports
+mvn clean test surefire-report:report
 
-Running in IDE:
-
-- Import project into your IDE
-- Make sure res/ folder is in classpath
-- Run the main.Main class
+# View test reports in: target/surefire-reports/
+```
 ## 📜 License
 This project is licensed under the MIT License.
